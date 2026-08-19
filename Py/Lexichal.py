@@ -1,15 +1,28 @@
-import regex as joao;
+import regex;
 
-tokensRegex = {
+'''
+    Todo:
+    - Pegar row e col
+    - Regex mais robustas (o joão é ótimo com palavras por que ele lê bastante livros (um homem culto) (e solteiro!! prestem atencao em gatinhasss miauuu xDDDD)))
+    - Trocar a ordem de execução dos regex
+    - "Consumir" os tokens já lidos pelo regex
+'''
+
+codigo = '''
+str Test = "Codigo"
+int numero = 36 
+'''
+
+tokensDefinition = {
     "var": r'[A-Za-z_][A-Za-z_0-9]*',
     "int": r'[0-9]+',
     "str": r'".*"',
-    "literal": r'\',
-    "operators": "[==|=|+|-|\/|*|[|]|{|}]"
-    "functions": [
-        "int", "func", "str", "float",
-        "return", "if", "else", "while", "for"
-    ]
+    "literal": r'\\',
+    "operators": "[==|=|+|-|/|*|[|]|{|}]",
+    # "functions": [
+    #     "int", "func", "str", "float",
+    #     "return", "if", "else", "while", "for"
+    # ]
 };
 
 tokenFound = {
@@ -19,9 +32,19 @@ tokenFound = {
     "value": any
 }
 
-tokensFound = [];
+tokensFound = []
 
-for i in tokens:
-    foundTokens = joao.findall(i)
-    foundTokens
-    
+linhasCodigo = codigo.split("\n")
+
+
+for index, linha in enumerate(linhasCodigo, start=0):
+    if linha.strip() == "": 
+        continue
+
+    for type, definition in tokensDefinition.items():
+        print({
+            "type": type,
+            "value": regex.findall(definition, linha)
+            })
+
+    print("--------")
