@@ -1,4 +1,6 @@
 import regex;
+import json
+from pprint import pprint
 
 '''
     Todo:
@@ -14,9 +16,9 @@ int numero = 36
 '''
 
 tokensDefinition = {
+    "str": r'".*"',
     "var": r'[A-Za-z_][A-Za-z_0-9]*',
     "int": r'[0-9]+',
-    "str": r'".*"',
     "literal": r'\\',
     "operators": "[==|=|+|-|/|*|[|]|{|}]",
     # "functions": [
@@ -32,19 +34,40 @@ tokenFound = {
     "value": any
 }
 
-tokensFound = []
+codeTokens = []
 
-linhasCodigo = codigo.split("\n")
+codeLines = codigo.split("\n")
 
 
-for index, linha in enumerate(linhasCodigo, start=0):
-    if linha.strip() == "": 
+for index, line in enumerate(codeLines, start=0):
+    if line.strip() == "": 
         continue
 
-    for type, definition in tokensDefinition.items():
-        print({
-            "type": type,
-            "value": regex.findall(definition, linha)
-            })
+    consumed = []
 
-    print("--------")
+    newLine = line
+
+    for tokenType, definition in tokensDefinition.items():
+        
+        for found in regex.finditer(definition, newLine):
+            
+            x1, x2 = found.span()            
+            
+            for cX, cY in consumed:
+                if x<=cX and y >= cY:
+                    continue
+                break
+
+            consumed.append(found.span())
+
+            foundedstring = line[x1:x2]
+
+            codeTokens.append({
+                "type": tokenType,
+                "value": foundedstring,
+                "row": index,
+                "colSpan": found.span(),
+                })
+            
+
+pprint(codeTokens)
