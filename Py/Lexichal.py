@@ -16,15 +16,12 @@ int numero = 36
 '''
 
 tokensDefinition = {
-    "str": r'".*"',
-    "var": r'[A-Za-z_][A-Za-z_0-9]*',
-    "int": r'[0-9]+',
     "literal": r'\\',
-    "operators": "[==|=|+|-|/|*|[|]|{|}]",
-    # "functions": [
-    #     "int", "func", "str", "float",
-    #     "return", "if", "else", "while", "for"
-    # ]
+    "str": r'".*"',
+    "function": "func|str|int|float|return|if|else|while|for",
+    "operator": "[==|=|+|-|/|*|[|]|{|}]",
+    "int": r'[0-9]+',
+    "var": r'[A-Za-z_][A-Za-z_0-9]*'
 };
 
 tokenFound = {
@@ -34,7 +31,7 @@ tokenFound = {
     "value": any
 }
 
-codeTokens = []
+codeTokens = [] # (tokenColStart, tokenColEnd)
 
 codeLines = codigo.split("\n")
 
@@ -48,19 +45,24 @@ for index, line in enumerate(codeLines, start=0):
     newLine = line
 
     for tokenType, definition in tokensDefinition.items():
-        
+         
         for found in regex.finditer(definition, newLine):
             
-            x1, x2 = found.span()            
+            foundStart, foundEnd = found.span()            
+            
+            # I don't know any other way of doing this
+            intervalConsumed = False
             
             for cX, cY in consumed:
-                if x<=cX and y >= cY:
-                    continue
-                break
+                if foundStart>=cX and foundEnd <= cY:
+                    intervalConsumed = True
+
+            if intervalConsumed:
+                continue
 
             consumed.append(found.span())
 
-            foundedstring = line[x1:x2]
+            foundedstring = line[foundStart:foundEnd]
 
             codeTokens.append({
                 "type": tokenType,
