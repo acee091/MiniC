@@ -1,0 +1,7 @@
+{"token":"INT","lexeme":"int","attribute":null,"line":1,"column":1}
+{"token":"INT_LIT","lexeme":"123","attribute":123,"line":1,"column":5}
+{"token":"IDENT","lexeme":"abc","attribute":"abc","line":1,"column":8}
+{"token":"ASSIGN","lexeme":"=","attribute":null,"line":1,"column":12}
+{"token":"INT_LIT","lexeme":"4","attribute":4,"line":1,"column":14}
+{"token":"SEMICOLON","lexeme":";","attribute":null,"line":1,"column":15}
+{"token":"EOF","lexeme":"","attribute":null,"line":2,"column":1}

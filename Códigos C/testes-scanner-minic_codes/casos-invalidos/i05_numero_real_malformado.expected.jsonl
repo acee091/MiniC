@@ -1,0 +1,6 @@
+{"token":"IDENT","lexeme":"valor","attribute":"valor","line":1,"column":1}
+{"token":"ASSIGN","lexeme":"=","attribute":null,"line":1,"column":7}
+{"token":"INT_LIT","lexeme":"12","attribute":12,"line":1,"column":9}
+{"token":"DOT","lexeme":".","attribute":null,"line":1,"column":11}
+{"token":"SEMICOLON","lexeme":";","attribute":null,"line":1,"column":12}
+{"token":"EOF","lexeme":"","attribute":null,"line":2,"column":1}

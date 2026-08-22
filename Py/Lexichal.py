@@ -10,10 +10,10 @@ from pprint import pprint
     - "Consumir" os tokens já lidos pelo regex
 '''
 
-codigo = '''
-str Test = "Codigo"
-int numero = 36 
-'''
+# codigo = '''
+# str Test = "Codigo"
+# int numero = 36 
+# '''
 
 tokensDefinition = {
     "literal": r'\\',
@@ -31,45 +31,47 @@ tokenFound = {
     "value": any
 }
 
-codeTokens = [] # (tokenColStart, tokenColEnd)
 
-codeLines = codigo.split("\n")
+def analisadorLexico(codigo):
+    codeTokens = [] # (tokenColStart, tokenColEnd)
 
+    codeLines = codigo.split("\n")
 
-for index, line in enumerate(codeLines, start=0):
-    if line.strip() == "": 
-        continue
-
-    consumed = []
-
-    newLine = line
-
-    for tokenType, definition in tokensDefinition.items():
-         
-        for found in regex.finditer(definition, newLine):
-            
-            foundStart, foundEnd = found.span()            
-            
-            # I don't know any other way of doing this
-            intervalConsumed = False
-            
-            for cX, cY in consumed:
-                if foundStart>=cX and foundEnd <= cY:
-                    intervalConsumed = True
-
-            if intervalConsumed:
-                continue
-
-            consumed.append(found.span())
-
-            foundedstring = line[foundStart:foundEnd]
-
-            codeTokens.append({
-                "type": tokenType,
-                "value": foundedstring,
-                "row": index,
-                "colSpan": found.span(),
-                })
-            
-
-pprint(codeTokens)
+    for index, line in enumerate(codeLines, start=0):
+        if line.strip() == "": 
+            continue
+    
+        consumed = []
+    
+        newLine = line
+    
+        for tokenType, definition in tokensDefinition.items():
+             
+            for found in regex.finditer(definition, newLine):
+                
+                foundStart, foundEnd = found.span()            
+                
+                # I don't know any other way of doing this
+                intervalConsumed = False
+                
+                for cX, cY in consumed:
+                    if foundStart>=cX and foundEnd <= cY:
+                        intervalConsumed = True
+    
+                if intervalConsumed:
+                    continue
+    
+                consumed.append(found.span())
+    
+                foundedstring = line[foundStart:foundEnd]
+    
+                codeTokens.append({
+                    "type": tokenType,
+                    "value": foundedstring,
+                    "row": index,
+                    "colSpan": found.span(),
+                    })
+                
+    
+    pprint(codeTokens)
+    return codeTokens

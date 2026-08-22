@@ -1,0 +1,9 @@
+{"token":"CHAR","lexeme":"char","attribute":null,"line":1,"column":1}
+{"token":"IDENT","lexeme":"c","attribute":"c","line":1,"column":6}
+{"token":"ASSIGN","lexeme":"=","attribute":null,"line":1,"column":8}
+{"token":"INT","lexeme":"int","attribute":null,"line":2,"column":1}
+{"token":"IDENT","lexeme":"x","attribute":"x","line":2,"column":5}
+{"token":"ASSIGN","lexeme":"=","attribute":null,"line":2,"column":7}
+{"token":"INT_LIT","lexeme":"1","attribute":1,"line":2,"column":9}
+{"token":"SEMICOLON","lexeme":";","attribute":null,"line":2,"column":10}
+{"token":"EOF","lexeme":"","attribute":null,"line":3,"column":1}

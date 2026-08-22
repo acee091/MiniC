@@ -1,0 +1,5 @@
+{"token":"PRINT","lexeme":"print","attribute":null,"line":1,"column":1}
+{"token":"LPAREN","lexeme":"(","attribute":null,"line":1,"column":6}
+{"token":"RPAREN","lexeme":")","attribute":null,"line":1,"column":21}
+{"token":"SEMICOLON","lexeme":";","attribute":null,"line":1,"column":22}
+{"token":"EOF","lexeme":"","attribute":null,"line":2,"column":1}
