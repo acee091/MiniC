@@ -1,15 +1,6 @@
 import regex;
 import json
-from pprint import pprint
-
-'''
-    Todo:
-    - Pegar row e col
-    - Regex mais robustas (o joão é ótimo com palavras por que ele lê bastante livros (um homem culto) (e solteiro!! prestem atencao em gatinhasss miauuu xDDDD)))
-    - Trocar a ordem de execução dos regex
-    - "Consumir" os tokens já lidos pelo regex
-'''
-
+    
 # codigo = '''
 # str Test = "Codigo"
 # int numero = 36 
