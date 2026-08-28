@@ -1,16 +1,13 @@
+from pprint import pprint
 import regex;
 import json
-    
-# codigo = '''
-# str Test = "Codigo"
-# int numero = 36 
-# '''
 
 tokensDefinition = {
     "literal": r'\\',
     "str": r'".*"',
     "function": "func|str|int|float|return|if|else|while|for",
-    "operator": "[==|=|+|-|/|*|[|]|{|}]",
+    "operator": "[==|=|+|-|/|*]",
+    "braces": "[[|]|{|}|(|)]",
     "int": r'[0-9]+',
     "var": r'[A-Za-z_][A-Za-z_0-9]*'
 };
@@ -22,6 +19,22 @@ tokenFound = {
     "value": any
 }
 
+def cacadorDeErros(tokens):
+    
+    parDeOperadores = False
+
+    # TODO: melhorar!
+    braces = [token["value"] for token in tokens if token["type"] == "braces"]
+    braces_t = ["[]", "()", "{}"]
+
+    for i in braces_t:
+        brace_left_ammt  = braces.count(list(i)[0])
+        brace_right_ammt = braces.count(list(i)[1])
+                
+        if brace_left_ammt != brace_right_ammt:
+            return "ERROR"
+    
+    return None
 
 def analisadorLexico(codigo):
     codeTokens = [] # (tokenColStart, tokenColEnd)
@@ -62,7 +75,14 @@ def analisadorLexico(codigo):
                     "row": index,
                     "colSpan": found.span(),
                     })
-                
-    
-    pprint(codeTokens)
-    return codeTokens
+
+    error = cacadorDeErros(codeTokens)  
+    return error if error else codeTokens
+
+codigo = '''
+str Test = "Codigo"
+int numero = 36 
+{[}
+'''
+
+pprint(analisadorLexico(codigo))
