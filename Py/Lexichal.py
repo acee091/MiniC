@@ -19,20 +19,30 @@ tokenFound = {
     "value": any
 }
 
+# Return
+'''
+Return: {error: "error_name", error_location: (0, 1)}
+'''
 def cacadorDeErros(tokens):
     
     parDeOperadores = False
 
     # TODO: melhorar!
-    braces = [token["value"] for token in tokens if token["type"] == "braces"]
+    braces = [token for token in tokens if token["type"] == "braces"]
     braces_t = ["[]", "()", "{}"]
 
     for i in braces_t:
-        brace_left_ammt  = braces.count(list(i)[0])
-        brace_right_ammt = braces.count(list(i)[1])
-                
+
+        braces_values = [brace["value"] for brace in braces]
+
+        brace_left_ammt  = braces_values.count(list(i)[0])
+        brace_right_ammt = braces_values.count(list(i)[1])
+
+
         if brace_left_ammt != brace_right_ammt:
-            return "ERROR"
+            last_instance = (''.join(braces_values).rindex(list(i)[0]))                
+            return {"error": "Brace without pair!", 
+                "error_location": braces[last_instance]["colSpan"]}
     
     return None
 
