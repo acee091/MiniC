@@ -1,0 +1,2 @@
+REJEITADO
+Diagnóstico deve indicar erro sintático; pista: esperado IDENT

@@ -1,0 +1,1 @@
+Program(Function(int main() Block(VarDecl(int i=Lit(int,0)), While(Binary(<,Id(i),Lit(int,10)), ExprStmt(Assign(Id(i),Binary(+,Id(i),Lit(int,1))))), Return(Id(i)))))

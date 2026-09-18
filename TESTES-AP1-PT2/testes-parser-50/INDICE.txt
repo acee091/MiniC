@@ -1,0 +1,51 @@
+ID | STATUS | TÍTULO | DIRETÓRIO
+01 | ACEITO | Declaração inteira simples | casos/01_declara_o_inteira_simples
+02 | ACEITO | Inicialização inteira | casos/02_inicializa_o_inteira
+03 | ACEITO | Expressão aritmética e precedência | casos/03_express_o_aritm_tica_e_preced_ncia
+04 | ACEITO | Várias declarações globais | casos/04_v_rias_declara_es_globais
+05 | ACEITO | Função sem parâmetros | casos/05_fun_o_sem_par_metros
+06 | ACEITO | Função com parâmetros | casos/06_fun_o_com_par_metros
+07 | ACEITO | Atribuição simples | casos/07_atribui_o_simples
+08 | ACEITO | If sem else | casos/08_if_sem_else
+09 | ACEITO | If com else | casos/09_if_com_else
+10 | ACEITO | While | casos/10_while
+11 | ACEITO | Bloco aninhado | casos/11_bloco_aninhado
+12 | ACEITO | Operadores relacionais | casos/12_operadores_relacionais
+13 | ACEITO | Operador unário | casos/13_operador_un_rio
+14 | ACEITO | Chamada sem argumentos | casos/14_chamada_sem_argumentos
+15 | ACEITO | Chamada com argumentos | casos/15_chamada_com_argumentos
+16 | ACEITO | Vetor com tamanho | casos/16_vetor_com_tamanho
+17 | ACEITO | Indexação de vetor | casos/17_indexa_o_de_vetor
+18 | ACEITO | Expressão com parênteses | casos/18_express_o_com_par_nteses
+19 | ACEITO | Float e comparação | casos/19_float_e_compara_o
+20 | ACEITO | Retorno vazio | casos/20_retorno_vazio
+21 | ACEITO | Função com vários comandos | casos/21_fun_o_com_v_rios_comandos
+22 | ACEITO | Atribuição associativa | casos/22_atribui_o_associativa
+23 | ACEITO | Condicionais aninhados | casos/23_condicionais_aninhados
+24 | ACEITO | Laço com expressão complexa | casos/24_la_o_com_express_o_complexa
+25 | ACEITO | Programa integrado | casos/25_programa_integrado
+26 | REJEITADO | Ponto e vírgula ausente em declaração | casos/26_ponto_e_v_rgula_ausente_em_declara_o
+27 | REJEITADO | Ponto e vírgula ausente após expressão | casos/27_ponto_e_v_rgula_ausente_ap_s_express_o
+28 | REJEITADO | Parêntese de condição ausente | casos/28_par_ntese_de_condi_o_ausente
+29 | REJEITADO | Chave de bloco ausente | casos/29_chave_de_bloco_ausente
+30 | REJEITADO | Chave final ausente | casos/30_chave_final_ausente
+31 | REJEITADO | Parêntese final de função ausente | casos/31_par_ntese_final_de_fun_o_ausente
+32 | REJEITADO | Parâmetro sem tipo | casos/32_par_metro_sem_tipo
+33 | REJEITADO | Parâmetro sem identificador | casos/33_par_metro_sem_identificador
+34 | REJEITADO | Vírgula extra nos parâmetros | casos/34_v_rgula_extra_nos_par_metros
+35 | REJEITADO | Inicializador sem expressão | casos/35_inicializador_sem_express_o
+36 | REJEITADO | Operador sem operando | casos/36_operador_sem_operando
+37 | REJEITADO | Dois operadores consecutivos | casos/37_dois_operadores_consecutivos
+38 | REJEITADO | Atribuição sem destino | casos/38_atribui_o_sem_destino
+39 | REJEITADO | Chamada sem fechar parêntese | casos/39_chamada_sem_fechar_par_ntese
+40 | REJEITADO | Vírgula sem argumento | casos/40_v_rgula_sem_argumento
+41 | REJEITADO | Índice sem fechar colchete | casos/41_ndice_sem_fechar_colchete
+42 | REJEITADO | Índice sem expressão | casos/42_ndice_sem_express_o
+43 | REJEITADO | While sem corpo | casos/43_while_sem_corpo
+44 | REJEITADO | Else sem if | casos/44_else_sem_if
+45 | REJEITADO | Return sem ponto e vírgula | casos/45_return_sem_ponto_e_v_rgula
+46 | REJEITADO | Tipo sem nome | casos/46_tipo_sem_nome
+47 | REJEITADO | Declaração local inválida | casos/47_declara_o_local_inv_lida
+48 | REJEITADO | Função sem corpo | casos/48_fun_o_sem_corpo
+49 | REJEITADO | Fechamento extra | casos/49_fechamento_extra
+50 | REJEITADO | Condição vazia | casos/50_condi_o_vazia

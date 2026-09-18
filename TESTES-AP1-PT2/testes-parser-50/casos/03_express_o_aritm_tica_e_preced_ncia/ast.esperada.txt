@@ -1,0 +1,1 @@
+Program(VarDecl(int x = Binary(+, Lit(int,2), Binary(*, Lit(int,3), Lit(int,4)))))

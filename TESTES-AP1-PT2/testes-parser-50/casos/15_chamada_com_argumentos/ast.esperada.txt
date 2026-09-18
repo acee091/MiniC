@@ -1,0 +1,1 @@
+Program(Function(int main() Block(VarDecl(int x=Call(Id(soma),Lit(int,2),Lit(int,3))), Return(Id(x)))))

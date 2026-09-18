@@ -1,0 +1,5 @@
+Comandos obrigatórios por caso:
+python parser.py codigo.c
+./parser codigo.c
+
+Casos válidos: 01-25 | Casos com erro sintático: 26-50

@@ -1,0 +1,1 @@
+Program(Function(int soma(int a,int b) Block(Return(Binary(+, Id(a), Id(b))))))

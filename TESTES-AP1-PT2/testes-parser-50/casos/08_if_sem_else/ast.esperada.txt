@@ -1,0 +1,1 @@
+Program(Function(int main() Block(VarDecl(int x = Lit(int,1)), If(Id(x), ExprStmt(Assign(Id(x),Lit(int,2))), NULL), Return(Id(x)))))

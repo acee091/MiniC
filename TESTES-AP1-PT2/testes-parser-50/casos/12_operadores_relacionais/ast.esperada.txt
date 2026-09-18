@@ -1,0 +1,1 @@
+Program(VarDecl(bool ok=Binary(&&,Binary(<=,Lit(int,3),Lit(int,4)),Binary(!=,Lit(int,8),Lit(int,9)))))

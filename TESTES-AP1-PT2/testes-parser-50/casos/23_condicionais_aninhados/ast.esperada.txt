@@ -1,0 +1,1 @@
+Program(Function(int main() Block(VarDecl(int x=Lit(int,2)), If(Binary(>,Id(x),Lit(int,0)),Block(If(Binary(<,Id(x),Lit(int,5)),ExprStmt(Assign(Id(x),Lit(int,4))),NULL)),NULL), Return(Id(x)))))

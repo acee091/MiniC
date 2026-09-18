@@ -1,0 +1,1 @@
+Program(Function(int main() Block(VarDecl(int a size=Lit(int,4)), ExprStmt(Assign(Index(Id(a),Lit(int,0)),Lit(int,9))), Return(Index(Id(a),Lit(int,0))))))

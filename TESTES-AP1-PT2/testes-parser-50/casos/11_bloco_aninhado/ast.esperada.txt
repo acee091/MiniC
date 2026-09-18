@@ -1,0 +1,1 @@
+Program(Function(int main() Block(VarDecl(int x=Lit(int,1)), Block(VarDecl(int y=Lit(int,2)), ExprStmt(Assign(Id(x),Binary(+,Id(x),Id(y))))), Return(Id(x)))))

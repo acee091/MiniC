@@ -1,0 +1,1 @@
+Program(Function(int dobro(int n) Block(VarDecl(int r=Binary(*,Id(n),Lit(int,2))), If(Binary(>,Id(r),Lit(int,10)),Return(Id(r)),Return(Lit(int,10))))))

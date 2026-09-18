@@ -1,0 +1,1 @@
+Program(VarDecl(float x=Lit(real,1.5)), VarDecl(bool b=Binary(>=,Id(x),Lit(real,1.0))))

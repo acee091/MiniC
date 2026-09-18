@@ -1,0 +1,357 @@
+{
+  "total": 50,
+  "validos": 25,
+  "invalidos": 25,
+  "casos": [
+    {
+      "id": 1,
+      "titulo": "Declaração inteira simples",
+      "resultado": "ACEITO",
+      "diretorio": "casos/01_declara_o_inteira_simples",
+      "pista": ""
+    },
+    {
+      "id": 2,
+      "titulo": "Inicialização inteira",
+      "resultado": "ACEITO",
+      "diretorio": "casos/02_inicializa_o_inteira",
+      "pista": ""
+    },
+    {
+      "id": 3,
+      "titulo": "Expressão aritmética e precedência",
+      "resultado": "ACEITO",
+      "diretorio": "casos/03_express_o_aritm_tica_e_preced_ncia",
+      "pista": ""
+    },
+    {
+      "id": 4,
+      "titulo": "Várias declarações globais",
+      "resultado": "ACEITO",
+      "diretorio": "casos/04_v_rias_declara_es_globais",
+      "pista": ""
+    },
+    {
+      "id": 5,
+      "titulo": "Função sem parâmetros",
+      "resultado": "ACEITO",
+      "diretorio": "casos/05_fun_o_sem_par_metros",
+      "pista": ""
+    },
+    {
+      "id": 6,
+      "titulo": "Função com parâmetros",
+      "resultado": "ACEITO",
+      "diretorio": "casos/06_fun_o_com_par_metros",
+      "pista": ""
+    },
+    {
+      "id": 7,
+      "titulo": "Atribuição simples",
+      "resultado": "ACEITO",
+      "diretorio": "casos/07_atribui_o_simples",
+      "pista": ""
+    },
+    {
+      "id": 8,
+      "titulo": "If sem else",
+      "resultado": "ACEITO",
+      "diretorio": "casos/08_if_sem_else",
+      "pista": ""
+    },
+    {
+      "id": 9,
+      "titulo": "If com else",
+      "resultado": "ACEITO",
+      "diretorio": "casos/09_if_com_else",
+      "pista": ""
+    },
+    {
+      "id": 10,
+      "titulo": "While",
+      "resultado": "ACEITO",
+      "diretorio": "casos/10_while",
+      "pista": ""
+    },
+    {
+      "id": 11,
+      "titulo": "Bloco aninhado",
+      "resultado": "ACEITO",
+      "diretorio": "casos/11_bloco_aninhado",
+      "pista": ""
+    },
+    {
+      "id": 12,
+      "titulo": "Operadores relacionais",
+      "resultado": "ACEITO",
+      "diretorio": "casos/12_operadores_relacionais",
+      "pista": ""
+    },
+    {
+      "id": 13,
+      "titulo": "Operador unário",
+      "resultado": "ACEITO",
+      "diretorio": "casos/13_operador_un_rio",
+      "pista": ""
+    },
+    {
+      "id": 14,
+      "titulo": "Chamada sem argumentos",
+      "resultado": "ACEITO",
+      "diretorio": "casos/14_chamada_sem_argumentos",
+      "pista": ""
+    },
+    {
+      "id": 15,
+      "titulo": "Chamada com argumentos",
+      "resultado": "ACEITO",
+      "diretorio": "casos/15_chamada_com_argumentos",
+      "pista": ""
+    },
+    {
+      "id": 16,
+      "titulo": "Vetor com tamanho",
+      "resultado": "ACEITO",
+      "diretorio": "casos/16_vetor_com_tamanho",
+      "pista": ""
+    },
+    {
+      "id": 17,
+      "titulo": "Indexação de vetor",
+      "resultado": "ACEITO",
+      "diretorio": "casos/17_indexa_o_de_vetor",
+      "pista": ""
+    },
+    {
+      "id": 18,
+      "titulo": "Expressão com parênteses",
+      "resultado": "ACEITO",
+      "diretorio": "casos/18_express_o_com_par_nteses",
+      "pista": ""
+    },
+    {
+      "id": 19,
+      "titulo": "Float e comparação",
+      "resultado": "ACEITO",
+      "diretorio": "casos/19_float_e_compara_o",
+      "pista": ""
+    },
+    {
+      "id": 20,
+      "titulo": "Retorno vazio",
+      "resultado": "ACEITO",
+      "diretorio": "casos/20_retorno_vazio",
+      "pista": ""
+    },
+    {
+      "id": 21,
+      "titulo": "Função com vários comandos",
+      "resultado": "ACEITO",
+      "diretorio": "casos/21_fun_o_com_v_rios_comandos",
+      "pista": ""
+    },
+    {
+      "id": 22,
+      "titulo": "Atribuição associativa",
+      "resultado": "ACEITO",
+      "diretorio": "casos/22_atribui_o_associativa",
+      "pista": ""
+    },
+    {
+      "id": 23,
+      "titulo": "Condicionais aninhados",
+      "resultado": "ACEITO",
+      "diretorio": "casos/23_condicionais_aninhados",
+      "pista": ""
+    },
+    {
+      "id": 24,
+      "titulo": "Laço com expressão complexa",
+      "resultado": "ACEITO",
+      "diretorio": "casos/24_la_o_com_express_o_complexa",
+      "pista": ""
+    },
+    {
+      "id": 25,
+      "titulo": "Programa integrado",
+      "resultado": "ACEITO",
+      "diretorio": "casos/25_programa_integrado",
+      "pista": ""
+    },
+    {
+      "id": 26,
+      "titulo": "Ponto e vírgula ausente em declaração",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/26_ponto_e_v_rgula_ausente_em_declara_o",
+      "pista": "esperado PONTO_E_VIRGULA"
+    },
+    {
+      "id": 27,
+      "titulo": "Ponto e vírgula ausente após expressão",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/27_ponto_e_v_rgula_ausente_ap_s_express_o",
+      "pista": "esperado PONTO_E_VIRGULA"
+    },
+    {
+      "id": 28,
+      "titulo": "Parêntese de condição ausente",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/28_par_ntese_de_condi_o_ausente",
+      "pista": "esperado FECHA_PAREN"
+    },
+    {
+      "id": 29,
+      "titulo": "Chave de bloco ausente",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/29_chave_de_bloco_ausente",
+      "pista": "esperado ABRE_CHAVE"
+    },
+    {
+      "id": 30,
+      "titulo": "Chave final ausente",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/30_chave_final_ausente",
+      "pista": "esperado FECHA_CHAVE"
+    },
+    {
+      "id": 31,
+      "titulo": "Parêntese final de função ausente",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/31_par_ntese_final_de_fun_o_ausente",
+      "pista": "esperado IDENT ou FECHA_PAREN"
+    },
+    {
+      "id": 32,
+      "titulo": "Parâmetro sem tipo",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/32_par_metro_sem_tipo",
+      "pista": "esperado KW_"
+    },
+    {
+      "id": 33,
+      "titulo": "Parâmetro sem identificador",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/33_par_metro_sem_identificador",
+      "pista": "esperado IDENT"
+    },
+    {
+      "id": 34,
+      "titulo": "Vírgula extra nos parâmetros",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/34_v_rgula_extra_nos_par_metros",
+      "pista": "esperado KW_ ou FECHA_PAREN"
+    },
+    {
+      "id": 35,
+      "titulo": "Inicializador sem expressão",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/35_inicializador_sem_express_o",
+      "pista": "esperado expressão"
+    },
+    {
+      "id": 36,
+      "titulo": "Operador sem operando",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/36_operador_sem_operando",
+      "pista": "esperado identificador, literal ou"
+    },
+    {
+      "id": 37,
+      "titulo": "Dois operadores consecutivos",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/37_dois_operadores_consecutivos",
+      "pista": "esperado identificador, literal ou"
+    },
+    {
+      "id": 38,
+      "titulo": "Atribuição sem destino",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/38_atribui_o_sem_destino",
+      "pista": "esperado identificador, literal ou"
+    },
+    {
+      "id": 39,
+      "titulo": "Chamada sem fechar parêntese",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/39_chamada_sem_fechar_par_ntese",
+      "pista": "esperado FECHA_PAREN"
+    },
+    {
+      "id": 40,
+      "titulo": "Vírgula sem argumento",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/40_v_rgula_sem_argumento",
+      "pista": "esperado FECHA_PAREN ou expressão"
+    },
+    {
+      "id": 41,
+      "titulo": "Índice sem fechar colchete",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/41_ndice_sem_fechar_colchete",
+      "pista": "esperado FECHA_COLCHETE"
+    },
+    {
+      "id": 42,
+      "titulo": "Índice sem expressão",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/42_ndice_sem_express_o",
+      "pista": "esperado expressão"
+    },
+    {
+      "id": 43,
+      "titulo": "While sem corpo",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/43_while_sem_corpo",
+      "pista": "esperado início de statement"
+    },
+    {
+      "id": 44,
+      "titulo": "Else sem if",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/44_else_sem_if",
+      "pista": "token KW_ELSE inesperado"
+    },
+    {
+      "id": 45,
+      "titulo": "Return sem ponto e vírgula",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/45_return_sem_ponto_e_v_rgula",
+      "pista": "esperado PONTO_E_VIRGULA"
+    },
+    {
+      "id": 46,
+      "titulo": "Tipo sem nome",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/46_tipo_sem_nome",
+      "pista": "esperado IDENT"
+    },
+    {
+      "id": 47,
+      "titulo": "Declaração local inválida",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/47_declara_o_local_inv_lida",
+      "pista": "esperado IDENT"
+    },
+    {
+      "id": 48,
+      "titulo": "Função sem corpo",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/48_fun_o_sem_corpo",
+      "pista": "esperado ABRE_CHAVE"
+    },
+    {
+      "id": 49,
+      "titulo": "Fechamento extra",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/49_fechamento_extra",
+      "pista": "token FECHA_CHAVE inesperado"
+    },
+    {
+      "id": 50,
+      "titulo": "Condição vazia",
+      "resultado": "REJEITADO",
+      "diretorio": "casos/50_condi_o_vazia",
+      "pista": "esperado expressão"
+    }
+  ]
+}
